@@ -22,3 +22,4 @@ image.zip里面是素材图片，把里面的image文件夹解压到跟start.py�
 
 我暂时没时间写，所以我的解决方法是放到虚拟机里面运行挂机。
 
+软件：https://tyxz.lanzoue.com/igBAf1sfna6j
