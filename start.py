@@ -16,7 +16,8 @@ image_paths = {
     "start": os.path.join(image_folder, "start.png"),
     "start1": os.path.join(image_folder, "start1.png"),
     "xuanzejiejie1": os.path.join(image_folder, "xuanzejiejie1.png"),
-    "xuanzejiejie2": os.path.join(image_folder, "xuanzejiejie2.png")
+    "xuanzejiejie2": os.path.join(image_folder, "xuanzejiejie2.png"),
+    "xuanshang": os.path.join(image_folder, "xuanshang.png")
 }
 
 # 加载图片文件到内存中，构建图片字典
@@ -69,7 +70,7 @@ def check_and_handle_images():
     if locate_and_click("end2"):  # 如果找到“结束”图片增加计数
         global a
         a += 1
-    elif locate_and_click("start") or locate_and_click("start1") or locate_and_click("xuanzejiejie1") or locate_and_click("xuanzejiejie2"):
+    elif locate_and_click("start") or locate_and_click("start1") or locate_and_click("xuanzejiejie1") or locate_and_click("xuanzejiejie2") or locate_and_click("xuanshang"):
         pass
 
 def start_loop():
@@ -98,7 +99,7 @@ a_label.pack(side="top", pady=10)
 update_label()
 
 # 添加按钮用于开始/停止循环
-start_button = tk.Button(root, text="开始/停止寮突，或者按住数字1键结束", command=start_loop, width=31,height=2, font=("bold", 11))
+start_button = tk.Button(root, text="开始/停止寮突，或者按住数字1键结束", command=start_loop, width=31,height=2, font=("bold", 10))
 start_button.pack(side="top", anchor="center")
 
 # 运行Tkinter主循环
